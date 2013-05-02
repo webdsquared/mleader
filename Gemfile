@@ -23,6 +23,7 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
+gem "nifty-generators", :group => :development
 
 
 # To use ActiveModel has_secure_password
@@ -39,3 +40,5 @@ gem 'devise'
 
 # To use debugger
 # gem 'debugger'
+
+gem "mocha", :group => :test

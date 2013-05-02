@@ -1,0 +1,93 @@
+<div class="team-hidden-container">
+  <div class="team-hidden">
+    <div class="team-hidden-left">
+      <h3>MyGreatApp</h3>
+    </div>
+    <div class="team-hidden-right">
+      <p>Aaron Johnson</p>
+    </div>
+  </div>
+</div>
+
+<div class="team-header-container">
+  <div class="team-header">
+    <div class="team-name">
+      <h1><%= @team.name %></h1>
+      <p class="hdr-text">Team Leader: <%= @team.leader_name %></p>
+      <p class="hdr-text">Contact: <%= @team.leader_email %></p>
+    </div>
+    <div class="team-raised">
+      <h1 class="raised-amt">$212</h1>
+      <p class="raised-text">Raised</p>
+    </div>
+  </div>
+</div>
+
+<div class="team-main-container">
+  <div class="team-main">
+    <div class="team-description">
+      <div class="description-container">
+        <p class="gray-text trip-info">Lorem ipsum dolor sit amet, euismod fabulas mea te, qui ei stet noster. An tempor repudiare laboramus vim, vim quas impetus suscipit no. Eum reque quando populo ut, pro probo delicata in. Ne vix noluisse imperdiet. Ad vim porro consul.</p>
+        <p class="gray-text trip-info">Lorem ipsum dolor sit amet, euismod fabulas mea te, qui ei stet noster. An tempor repudiare laboramus vim, vim quas impetus suscipit no. Eum reque quando populo ut, pro probo delicata in. Ne vix noluisse imperdiet. Ad vim porro consul.</p>
+      </div>
+      <div class="comment-container">
+        <h3>Comments</h3>
+        <p>Lorem ipsum dolor sit amet, euismod fabulas mea te, qui ei stet noster. An tempor repudiare laboramus vim, vim quas impetus suscipit no. Eum reque quando populo ut, pro probo delicata in. Ne vix noluisse imperdiet. Ad vim porro consul.</p>
+      </div>
+    </div>
+    <div class="team-side">
+      <div class="side-box">
+        <h2 class="side-hdr">Trip Details</h2>
+        <p class="side-member">Destination: <%= @team.destination %></p>
+        <p class="side-member">Cost: <%= number_to_currency @team.trip_cost %></p>
+        <p class="side-member">Depart: <%= @team.departure.strftime("%b %-d, %Y") %></p>
+        <p class="side-member">Return: <%= @team.return.strftime("%b %-d, %Y") %></p>
+      </div>
+      <div class="side-box-bottom">
+        <h2 class="side-hdr">Team Members</h2>
+        <p class="side-member">Pamela Johnson</p>
+        <p class="side-member">Aaron Johnson</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer-container">
+  <div class="footer">
+    <h4 class="ft-app">MyGreatApp</h4>
+  </div>
+</div>
+<p>
+  <strong>Name:</strong>
+  <%= @team.name %>
+</p>
+<p>
+  <strong>Leader Name:</strong>
+  <%= @team.leader_name %>
+</p>
+<p>
+  <strong>Leader Email:</strong>
+  <%= @team.leader_email %>
+</p>
+<p>
+  <strong>Departure:</strong>
+  <%= @team.departure %>
+</p>
+<p>
+  <strong>Return:</strong>
+  <%= @team.return %>
+</p>
+<p>
+  <strong>Destination:</strong>
+  <%= @team.destination %>
+</p>
+<p>
+  <strong>Trip Cost:</strong>
+  <%= @team.trip_cost %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_team_path(@team) %> |
+  <%= link_to "Destroy", @team, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", teams_path %>
+</p>
