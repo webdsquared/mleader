@@ -2,6 +2,8 @@ body { margin: 0;}
 
 p, h1, h2, h3, h4, h5, h6 { font-family: 'Titillium Web', sans-serif;margin:0; }
 
+/* TEAM SHOW PAGE */
+
 .team-hidden-container { margin:0;background-color:#3a434c;padding:20px 0; }
 .team-hidden { margin:0 auto;width:980px;overflow:hidden; }
 .team-hidden-left { margin:0;width:580px;float:left; }
@@ -16,7 +18,7 @@ p, h1, h2, h3, h4, h5, h6 { font-family: 'Titillium Web', sans-serif;margin:0; }
 
 .team-main-container { margin:0;padding:40px 0;min-height:600px; }
 .team-main { width:980px;margin:0 auto;overflow:hidden; }
-.team-description { margin:0;width:690px;float:left;padding-right:40px; }
+.team-description { margin:0;width:690px;float:left;padding-left:40px; }
 .team-side { margin:0;width:250px;float:left; }
 .description-container { padding-bottom:30px;border-bottom:1px solid #eee; }
 .side-box { margin-bottom:20px;border-bottom:1px solid #eee;padding-bottom:20px; }
@@ -35,3 +37,9 @@ p.raised-text { font-size:1.8em;text-align:right;margin:0;line-height:1;color:#8
 h4.ft-app { margin:10px 0; }
 h2.side-hdr { margin-top:0;line-height:1;margin-bottom:10px;font-weight:400; }
 p.side-member {margin:0;line-height:1.8;font-size:1.15em;margin-left:2px;font-weight:200; }
+
+
+.hm-top-container { background-color:#eef0f3;padding:40px 0; }
+.hm-top { width:980px;margin:0 auto;overflow:hidden; }
+.hm-topl { width:730px;margin:0;float:left; }
+.hm-topr { width:250px;margin:0;float:left;padding-top:5px; }
